@@ -26,7 +26,7 @@ matracey/world-at-war +set sv_authorizemode '-1' +exec server.cfg +map_rotate
     * You could also use `-dit` here instead, which would start the container detached. You can attach later by running `docker attach <container>`.
     * To restart a stopped container, use the command `docker start -ai <container>`. This will automatically and interactively attach to the container on start.
 
-* `-p 28960:28960 -p 28960:28960/udp`: This forwards TCP & UDP ports 28960 (the default CoD Server Port) to the docker host. I haven't needed any other ports exposed by YMMV.
+* `-p 28960:28960 -p 28960:28960/udp`: This forwards TCP & UDP ports 28960 (the default CoD Server Port) to the docker host. I haven't needed any other ports exposed but YMMV.
 
 * `-v /var/codwaw/res/main:/home/codwaw/main`: Mounts the `main` folder in my Docker host's filesystem to the `main` folder within the container's filesystem. I copied the contents of this from the CoD:WaW installation on my PC.
 
